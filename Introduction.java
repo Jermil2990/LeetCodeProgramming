@@ -1,8 +1,10 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
+// import java.util.List;
 import java.util.Queue;
+import java.util.LinkedList;
+import java.util.Stack;
 
 public class Introduction {
     public static void main(String[] args) {
@@ -76,6 +78,16 @@ public class Introduction {
         }
 
         // Queues & Stacks *import LinkedList for queue* and *import Stack*
+        // Queue data structure is FIFO (First in first out). When data is deleted it is
+        // deleted from the front
+        // then data is added in the back
+        // ADD - adds items to list *if queue full throws exception*
+        // OFFER - adds items to list *if queue full returns false*
+        // ELEMENT - returns the head of the queue
         Queue<Integer> queue = new LinkedList<>();
+        queue.add(3);
+        queue.add(8);
+        System.out.println(queue.poll());
+        System.out.println(queue.element());
     }
 }
