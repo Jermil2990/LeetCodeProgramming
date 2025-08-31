@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Queue;
 
 public class Introduction {
     public static void main(String[] args) {
@@ -17,6 +19,8 @@ public class Introduction {
         System.out.println(numbers[2]);
 
         // ArrayList *import ArrayList*
+        // This is a creation for a list interface within an ArrayList object <
+        // List<Integer> list = new ArrayList<>();
         ArrayList<Integer> list = new ArrayList<>();
 
         list.add(10);
@@ -70,5 +74,8 @@ public class Introduction {
         for (String name : names) {
             System.out.println(name);
         }
+
+        // Queues & Stacks *import LinkedList for queue* and *import Stack*
+        Queue<Integer> queue = new LinkedList<>();
     }
 }
