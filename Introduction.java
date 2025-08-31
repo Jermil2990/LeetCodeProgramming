@@ -77,17 +77,37 @@ public class Introduction {
             System.out.println(name);
         }
 
-        // Queues & Stacks *import LinkedList for queue* and *import Stack*
+        // Queues *import LinkedList for queue*
         // Queue data structure is FIFO (First in first out). When data is deleted it is
         // deleted from the front
         // then data is added in the back
-        // ADD - adds items to list *if queue full throws exception*
-        // OFFER - adds items to list *if queue full returns false*
-        // ELEMENT - returns the head of the queue
+        // ADD - adds items to list (if queue full throws exception)
+        // OFFER - adds items to list (if queue full returns false)
+        // REMOVE - returns and removes the head of the queue (throws exception if
+        // empty)
+        // POLL - eturns and removes the head of the queue (returns null if empty)
+        // ELEMENT - returns the head of the queue (throws exception if empty)
+        // PEEK - returns the head of queue (throws null if empty)
         Queue<Integer> queue = new LinkedList<>();
         queue.add(3);
         queue.add(8);
         System.out.println(queue.poll());
         System.out.println(queue.element());
+
+        // Stacks *import Stack*
+        // push() - adds an element to the top of the stack
+        // pop() - removes and returns the element at the top of the stack
+        // peek() - returns the element at the top of the stack without removing it
+        // size() - returns the number of elements in the stack
+        // contains() - checks if a specific element is in the stack
+        // empty() - checks if the stack is empty (true/false)
+        // get(index) - returns the element at the given position in the stack
+        // set(index, element) - replaces the element at the given position in the stack
+        Stack<Integer> stack = new Stack<>();
+        stack.push(65);
+        stack.push(7);
+        stack.push(54);
+        System.out.println("Stack: " + stack);
+        System.out.println(stack.pop());
     }
 }
