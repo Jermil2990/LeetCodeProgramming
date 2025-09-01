@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
-// import java.util.List;
+import java.util.Arrays;
 import java.util.Queue;
 import java.util.LinkedList;
 import java.util.Stack;
@@ -15,20 +15,36 @@ public class Introduction {
         System.out.println(message);
 
         // Arrays
+        // To print an array it requires a for loop or Arrays method
+        // LENGTH -
+        // EQUALS -
+        // Arrays.toString() -
+        // Arrays.fill() - fill an array with a single value
         int[] numbers = { 1, 4, 5, 2, 4 };
+        int[] numbersExtra = new int[6];
 
-        // Print index of array
+        Arrays.fill(numbers, -1);
+        System.out.println(numbers.length); // prints length
         System.out.println(numbers[2]);
+        System.out.println(Arrays.toString(numbersExtra)); // Printing array
 
         // ArrayList *import ArrayList*
+        // size() → how many elements
+        // get() → read element
+        // add() → insert element
+        // remove() → delete element
+        // set() → update element
+
         // This is a creation for a list interface within an ArrayList object <
         // List<Integer> list = new ArrayList<>();
+
         ArrayList<Integer> list = new ArrayList<>();
 
         list.add(10);
         list.add(5);
         list.remove(0);
         System.out.println(list.get(0));
+        System.out.println(list);
 
         // HashMap *import HashMap*
         // HashMaps functions are GET () and PUT (). They are used to create key value
@@ -109,5 +125,8 @@ public class Introduction {
         stack.push(54);
         System.out.println("Stack: " + stack);
         System.out.println(stack.pop());
+
+        // LinkedList - data structure for storing objects in linear order
+
     }
 }
