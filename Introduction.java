@@ -8,6 +8,9 @@ import java.util.Stack;
 
 public class Introduction {
     public static void main(String[] args) {
+        // Strings
+        // length() - returns length of string
+        // toCharArray() = turns string to char array
         System.out.println("Hello World!");
         String message = "Hello";
         System.out.println(message.toLowerCase());
@@ -22,6 +25,10 @@ public class Introduction {
         // Arrays.fill() - fill an array with a single value
         int[] numbers = { 1, 4, 5, 2, 4 };
         int[] numbersExtra = new int[6];
+
+        // System.out.println(numbers[1]);
+        int tim = numbersExtra[0]++;
+        System.out.println("Value: " + numbers[0]);
 
         Arrays.fill(numbers, -1);
         System.out.println(numbers.length); // prints length
@@ -53,11 +60,14 @@ public class Introduction {
         // PUT - adds a new key-value pair to the map
         // REMOVE - rmeoves key-value pair
         // SIZE - returns length of map
+        // EQUALS - compares two hashmaps
+        // getOrDefault(value, default value) - takes a value to look for and then if
+        // not found it ask for defualt value
         // containsKey - checks if key is in map
         // containsValue - checks if value exsists in map
         // replace - replaces value with key-value pair given (if key does not exsist
         // does nothing)
-        // putIfAbsent - only updates key-value pair if not pre sent
+        // putIfAbsent() - only updates key-value pair if not present in array
 
         HashMap<String, Integer> map = new HashMap<>();
 
