@@ -61,6 +61,8 @@ public class Introduction {
         // REMOVE - rmeoves key-value pair
         // SIZE - returns length of map
         // EQUALS - compares two hashmaps
+        // SEARCH - finds a specific object and returns boolean true if found and -1 if
+        // not
         // getOrDefault(value, default value) - takes a value to look for and then if
         // not found it ask for defualt value
         // containsKey - checks if key is in map
